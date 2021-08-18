@@ -245,7 +245,7 @@ if ((age === 25) && (userName === 'John')) {
 
 //Мое решение несколькими сспособами
 
-//let killEnemy = +prompt('Сколько Вы убили врагов?');
+let killEnemy = +prompt('Сколько Вы убили врагов?');
 
 //switch (killEnemy) {
 //	case 1:
@@ -265,26 +265,6 @@ if ((age === 25) && (userName === 'John')) {
 	
 //}
 
-
-//let killEnemy = +prompt('Сколько Вы убили врагов?');
-//let a = killEnemy ;
-
-//switch (a) {
-//	case 1:
-//		alert('Вам начислено 100 очков');
-//		break;
-//	case 3:
-//		alert('Вам начислено 400 очков');
-//		break;
-//	case 5:
-//		alert('Вам начислено 700 очков');
-//		break;
-//	case 10:
-//		alert('Вам начислено 1000 очков');
-//		break;
-//	default:
-//		alert('Вам начислено ' + a * 100 + ' очков');
-//}
 
 //if (killEnemy === 1) {
 //	alert('Вам начислено 100 очков');
