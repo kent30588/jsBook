@@ -245,7 +245,7 @@ if ((age === 25) && (userName === 'John')) {
 
 //Мое решение несколькими сспособами
 
-let killEnemy = +prompt('Сколько Вы убили врагов?');
+//let killEnemy = +prompt('Сколько Вы убили врагов?');
 
 //switch (killEnemy) {
 //	case 1:
@@ -265,6 +265,7 @@ let killEnemy = +prompt('Сколько Вы убили врагов?');
 	
 //}
 
+//let killEnemy = +prompt('Сколько Вы убили врагов?');
 
 //if (killEnemy === 1) {
 //	alert('Вам начислено 100 очков');
@@ -278,6 +279,8 @@ let killEnemy = +prompt('Сколько Вы убили врагов?');
 //	alert('Вам начислено ' + killEnemy * 100 + ' очков');
 //}
 
+//let killEnemy = +prompt('Сколько Вы убили врагов?');
+
 //let otvet = (killEnemy === 1) ? 'Вам начислено 100 очков' :
 //	(killEnemy === 3) ? 'Вам начислено 400 очков' :
 //		(killEnemy === 5) ? 'Вам начислено 700 очков' :
@@ -285,3 +288,116 @@ let killEnemy = +prompt('Сколько Вы убили врагов?');
 //				 'Вам начислено ' + killEnemy * 100 + ' очков' ;
 
 //alert(otvet);
+
+
+// Функции
+
+//function callPayment() {
+//	let amount = +prompt('На какую сумму Вы хотите пополнить счет?');
+//	alert(`Ваш счет пополнен на ${amount} $`);
+//}
+
+//callPayment();
+
+//function callPayment(currency = '$') {
+//	let amount = +prompt('На какую сумму Вы хоите пополнить счет?');
+//	alert(`Ваш счет пополнен на сумму ${amount} ${currency}`);
+//}
+
+//let userCurrencyRub = 'P';
+//let userCurrencyUSD = '$';
+
+//callPayment();//Выведет $
+//callPayment(userCurrencyRub); //Выведет Р т.к. вызов в таком случае перебьет значение по умолчанию
+
+/*
+Домашнее задание
+1. Определить функцию, которая будет запрашивать число(с помощью prompt), умножать его на 327 и делить на 10. 
+И с помощью alert выдавать полученное значение;
+2. Определить функцию с аргументом, которая будет запрашивать число(с помощью prompt), умножать его на то значение, 
+указанное в качестве аргумента. И с помощью alert выдавать полученное значение. 
+*/
+
+//1
+//function whatNumber() {
+//	let number = +prompt('Введите какое-нибудь число');
+//	let total = number * 327 / 10;
+//	alert(`Получилось ${total}`);
+//}
+
+//whatNumber();
+
+//2
+
+//function whatNumber(a) {
+//	let b = +prompt('Введите какое-нибудь число');
+//	let total = b * a;
+//	alert(`Получилось ${total}`);
+//}
+//whatNumber(10);
+
+// Возврат значение функций
+
+//function sqr(a) {
+//	let result = a * a;
+//	return result;
+//}
+
+//let d = sqr(10);
+//console.log(d);
+
+/*
+Домашнее задание
+Написать функцию, которая с помощью prompt запрашивает число у пользователя.
+Затем эта функция умножает введеной число на 100 и возвращает это значение.
+Результат функции должен быть записан в переменную.
+*/
+
+//function first(number) {
+//	let question = +prompt('введите какое-нибудь число');
+//	let result = question * number;
+//	return result;
+//}
+
+//let number = first(100);
+//alert(number);
+
+//Стрелочная функция
+
+//let func = () => alert('Я стрелочная функция!');
+
+//func();
+
+//let func = (a) => {
+//	alert(a);
+//};
+
+//func(3);// Выведет 3
+
+//let func = () => {
+//	let result = 2 + 2;
+//	return result;
+//};
+
+//let result = func();
+//alert(result);// выведет 4
+
+/*
+Домашнее задание
+Напиши стрелочную функцию, которая будет запрашивать с помощью prompt два числа у пользователя
+и перемножать их между собой. Полученное значение функция должна возвращать с помощью
+ключевого слова return. Результат выполнения функции сохрани в переменную.
+*/
+
+//let func = () => {
+//	let questionFirst = +prompt('Введите любое число');
+//	let questionTwo = +prompt('Введите второе любое число');
+//	let result= questionFirst * questionTwo;
+//	return result;
+//};
+
+//let result = func();
+//alert(result);
+
+
+
