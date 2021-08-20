@@ -329,12 +329,12 @@ if ((age === 25) && (userName === 'John')) {
 
 //2
 
-//function whatNumber(a) {
+//function whatNumber() {
 //	let b = +prompt('Введите какое-нибудь число');
-//	let total = b * a;
-//	alert(`Получилось ${total}`);
+//	//let total = b * a;
+//	alert(`Получилось ${b * 10}`);
 //}
-//whatNumber(10);
+//whatNumber();
 
 // Возврат значение функций
 
@@ -349,18 +349,18 @@ if ((age === 25) && (userName === 'John')) {
 /*
 Домашнее задание
 Написать функцию, которая с помощью prompt запрашивает число у пользователя.
-Затем эта функция умножает введеной число на 100 и возвращает это значение.
+Затем эта функция умножает введеное число на 100 и возвращает это значение.
 Результат функции должен быть записан в переменную.
 */
 
-//function first(number) {
+//function someNumber() {
 //	let question = +prompt('введите какое-нибудь число');
-//	let result = question * number;
-//	return result;
+//	//let result = question * number;
+//	return question * 100;
 //}
+//let result = someNumber();
+//console.log(result);
 
-//let number = first(100);
-//alert(number);
 
 //Стрелочная функция
 
@@ -392,12 +392,15 @@ if ((age === 25) && (userName === 'John')) {
 //let func = () => {
 //	let questionFirst = +prompt('Введите любое число');
 //	let questionTwo = +prompt('Введите второе любое число');
-//	let result= questionFirst * questionTwo;
-//	return result;
+//	//let result = questionFirst * questionTwo;
+//	return questionFirst * questionTwo;
 //};
 
-//let result = func();
-//alert(result);
+//func();
+//console.log()
+//let test = func;
+//console.log(func());
+
 
 
 
