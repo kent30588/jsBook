@@ -189,5 +189,3 @@ if ((age === 25) && (userName === 'John')) {
 //console.log(func());
 
 
-
-
