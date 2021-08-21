@@ -1,52 +1,5 @@
-//let a = 4;
-//let b = 2;
 
-//console.log(a > b);
 "use strict";
-
-//const question = prompt('Вам нравится наш сайт?', '');
-
-//if (question < 18) {
-//	alert('Вам рано посещать наш сайт')
-//} else if (question >= 18) {
-//	alert('Добро пожаловать');
-//} else {
-//	alert('Вы указали неверный формат возраста');
-//}
-
-//const otvet = (question < 18) ? 'Вам рано посещать наш сайт' :
-//	(question >= 18) ? 'Добро пожаловать' :
-//		'Вы указали неверный формат возраста';
-//alert(otvet);
-//const question = prompt('Вам нравится наш сайт?', '');
-
-//if (question < 18) {
-//	alert('adsads');
-//} else if (question >= 18) {
-//	alert('asdcxvcv')
-//} else {
-//	alert('asdasd');
-//}
-
-// Циклы
-
-//let i = 1;
-//while (i <= 3) {
-//	alert(i);
-//	i++;
-//}
-
-
-//let i = 1;
-
-//do {
-//	alert(i);
-//	i++;
-//} while (i < 4);
-
-//for (let i = 1; i <= 3; i++){
-//	alert(i);
-//}
 
 //Домашнее задание 
 /* 1 Напиши код, который выводит на экран с помощью цикла while значения от 50 до 100
@@ -77,104 +30,6 @@
 //	console.log(i);
 //}
 
-// Операторы
-
-//console.log(typeof(+'1' + +'3')); // получим  4
-
-//инкрименты
-//let i = 3;
-//i++;
-//console.log(i); // получим значение 4
-
-//let i = 3;
-//console.log(++i); // получим значение 4
-
-//декремент
-
-//let i = 3;
-//i--;
-//console.log(i); // получим значение 2
-
-//let i = 3;
-//console.log(--i); // получим значение 2
-
-//Возведение в степень
-//let a = 2;
-//let b = 3;
-//console.log(2 ** 3); // получим значение 8
-//console.log(3 ** 2); // получим значение 9
-
-//Остаток от деления
-//let a = 11;
-//let b = 2;
-//console.log(a % b);// получим 1
-
-//Логические операторы
-
-//  Оператор ||
-
-//let a = true;
-//let b = false;
-//if (a || b) {
-//	alert('Я буду появляться т.к. одно из значение true');
-//} else {
-//	alert('Появлюсь я');
-//}
-
-
-//let c = false;
-//let d = false;
-//if (c || d) {
-//	alert('Я буду появляться т.к. одно из значение true');
-//} else {
-//		alert('Появлюсь я');
-//}
-
-//let useAge = 17;
-//let counrMsgs = 499;
-
-//if ((useAge >= 18) || (counrMsgs >= 500)) {
-//	alert('Вам разрешено прикреплять фото');// выведет сообщение, если хоть один операнд будет true
-//} else {
-//	alert('Вам запрещено прикреплять фото');// выведет сообщение, если оба false
-//}
-
-// Оператор &&
-
-//console.log(false && false);//false
-//console.log(true && false);//false
-//console.log(false && true);//false
-//console.log(true && true);// true
-
-
-
-//let useAge = 21;
-//let counrMsgs = 499;
-
-//if ((useAge >= 18) && (counrMsgs >= 500)) {
-//	alert('Вам разрешено прикреплять фото');// выведет сообщение, если оба операнда true
-//} else {
-//	alert('Вам запрещено прикреплять фото');// выведет сообщение, если оба или один false
-//}
-
-// Оператор ! 
-
-//let a = !true;
-//console.log(a);// вернет false
-//let b = !false;
-//console.log(b);// вернет true
-//let c = !'string';
-//console.log(c);// вернет false
-//let d = !0;
-//console.log(d);// вернет true
-//let e = !8;
-//console.log(e);// вернет false
-
-// !!
-
-//let str = 5;
-//let a = !!str;
-//console.log(a); // перевели переменную str в boolean / true
 
 /* домашнее задание
 Пользователю с помощью функции prompt предлагается ввести возраст
@@ -208,23 +63,6 @@ if ((age === 25) && (userName === 'John')) {
 }
 */
 
-// конструкция switch
-
-//let arg = +prompt('Сколько?');
-
-//switch (arg) {
-//	case 1:
-//		alert('Значение переменной arg равно 1'); // выведится это сообщение если пользователь укажет 1
-//		break;
-//	case 3:
-//		alert('Значение переменной arg рано 3');// выведится это сообщение если пользователь укажет 3
-//		break;
-//	case 5:
-//		alert('Значение переменной arg равно 5');// выведится это сообщение если пользователь укажет 5
-//		break;
-//	default:
-//		alert('Значение переменной arg равно ' + arg); 
-//}
 
 /*
 Домашнее задание
@@ -289,27 +127,6 @@ if ((age === 25) && (userName === 'John')) {
 
 //alert(otvet);
 
-
-// Функции
-
-//function callPayment() {
-//	let amount = +prompt('На какую сумму Вы хотите пополнить счет?');
-//	alert(`Ваш счет пополнен на ${amount} $`);
-//}
-
-//callPayment();
-
-//function callPayment(currency = '$') {
-//	let amount = +prompt('На какую сумму Вы хоите пополнить счет?');
-//	alert(`Ваш счет пополнен на сумму ${amount} ${currency}`);
-//}
-
-//let userCurrencyRub = 'P';
-//let userCurrencyUSD = '$';
-
-//callPayment();//Выведет $
-//callPayment(userCurrencyRub); //Выведет Р т.к. вызов в таком случае перебьет значение по умолчанию
-
 /*
 Домашнее задание
 1. Определить функцию, которая будет запрашивать число(с помощью prompt), умножать его на 327 и делить на 10. 
@@ -336,16 +153,6 @@ if ((age === 25) && (userName === 'John')) {
 //}
 //whatNumber();
 
-// Возврат значение функций
-
-//function sqr(a) {
-//	let result = a * a;
-//	return result;
-//}
-
-//let d = sqr(10);
-//console.log(d);
-
 /*
 Домашнее задание
 Написать функцию, которая с помощью prompt запрашивает число у пользователя.
@@ -361,26 +168,6 @@ if ((age === 25) && (userName === 'John')) {
 //let result = someNumber();
 //console.log(result);
 
-
-//Стрелочная функция
-
-//let func = () => alert('Я стрелочная функция!');
-
-//func();
-
-//let func = (a) => {
-//	alert(a);
-//};
-
-//func(3);// Выведет 3
-
-//let func = () => {
-//	let result = 2 + 2;
-//	return result;
-//};
-
-//let result = func();
-//alert(result);// выведет 4
 
 /*
 Домашнее задание
