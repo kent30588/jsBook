@@ -183,9 +183,4 @@ if ((age === 25) && (userName === 'John')) {
 //	return questionFirst * questionTwo;
 //};
 
-//func();
-//console.log()
-//let test = func;
-//console.log(func());
-
 
