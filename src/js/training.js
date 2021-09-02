@@ -256,6 +256,7 @@
 //	}
 //};
 //hero.goLeft();
+<<<<<<< HEAD
 //hero.hit();
 
 let text = document.getElementById('text');
@@ -272,3 +273,6 @@ btnGreen.addEventListener('click', () => {
 });
 
 //Модифицированный
+=======
+//hero.hit();
+>>>>>>> 42c57008277426d073fa98c672179682e3d4407d
