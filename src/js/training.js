@@ -257,3 +257,18 @@
 //};
 //hero.goLeft();
 //hero.hit();
+
+let text = document.getElementById('text');
+let btnRed = document.getElementById('btnRed');
+let btnGreen = document.getElementById('btnGreen');
+
+btnRed.onclick = function () {
+	text.style.color = 'red';
+	alert('Цвет текста изменени на красный');
+};
+btnGreen.addEventListener('click', () => {
+	text.style.color = 'green';
+	alert('Цвет текста изменени на зеленый');
+});
+
+//Модифицированный
