@@ -28,7 +28,7 @@
 //	alert('asdasd');
 //}
 
-// Циклы
+//                                                            Циклы
 
 //let i = 1;
 //while (i <= 3) {
@@ -48,7 +48,7 @@
 //	alert(i);
 //}
 
-// Операторы
+//                                                           Операторы
 
 //console.log(typeof(+'1' + +'3')); // получим  4
 
@@ -147,7 +147,7 @@
 
 
 
-// конструкция switch
+//                                                             конструкция switch
 
 //let arg = +prompt('Сколько?');
 
@@ -165,7 +165,7 @@
 //		alert('Значение переменной arg равно ' + arg); 
 //}
 
-// Функции
+//                                                                 Функции
 
 //function callPayment() {
 //	let amount = +prompt('На какую сумму Вы хотите пополнить счет?');
@@ -218,7 +218,7 @@
 //alert(result);// выведет 4
 
 
-// Объекты
+//                                                                    Объекты
 
 //const boy = { 
 //	name: 'Александр',// свойства объекта (ключ : значение)
@@ -256,23 +256,92 @@
 //	}
 //};
 //hero.goLeft();
-<<<<<<< HEAD
 //hero.hit();
 
-let text = document.getElementById('text');
-let btnRed = document.getElementById('btnRed');
-let btnGreen = document.getElementById('btnGreen');
+//let text = document.getElementById('text');
+//let btnRed = document.getElementById('btnRed');
+//let btnGreen = document.getElementById('btnGreen');
 
-btnRed.onclick = function () {
-	text.style.color = 'red';
-	alert('Цвет текста изменени на красный');
-};
-btnGreen.addEventListener('click', () => {
-	text.style.color = 'green';
-	alert('Цвет текста изменени на зеленый');
-});
+//btnRed.onclick = function () {
+//	text.style.color = 'red';
+//	alert('Цвет текста изменени на красный');
+//};
+//btnGreen.addEventListener('click', () => {
+//	text.style.color = 'green';
+//	alert('Цвет текста изменени на зеленый');
+//});
 
-//Модифицированный
-=======
-//hero.hit();
->>>>>>> 42c57008277426d073fa98c672179682e3d4407d
+//                                                                  массивы
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+//const users = [
+//	{ name: 'Вася', age: 15 },
+//	{ name: 'Игорь', age: 35}
+//];
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+//arr[0];// ручка
+//arr[1];//карандаш
+//arr[2];//ластик
+//arr[4]//undefined
+
+//изменение элемента в массиве
+
+//let arr = ['ручка', 'карандаш', 'ластик'];
+//arr[1] = 'пластелин';
+//console.log(arr);
+
+//Добавление элемента в массив
+
+//const arr = ['ручка'];
+//arr[1] = 'карандаш';
+
+//arr[10] = 'пластелин';// Так добавлять не рекомендуется
+//console.log(arr.length);
+
+//const arr = [];
+//arr.push('ручка');
+//arr.push('карандаш');
+//console.log(arr);
+//console.log(arr.length);
+
+//const arr = ['ручка', 'карандаш'];
+//arr.unshift('ластик');
+//arr.unshift('точилка');
+//console.log(arr);
+//console.log(arr[1]);
+//console.log(arr.length);
+
+// Удаление элемента в массиве
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+////arr.pop();
+//const dellElement = arr.pop();
+//console.log(arr);
+//console.log(dellElement );
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+////arr.shift();
+//const dellElement = arr.shift();
+//console.log(arr);
+//console.log(dellElement );
+
+// Перебор элеметов в массиве for forEach
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+//for (let i = 0; i < arr.length; i++){
+//	console.log(arr[i]);
+//}
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+//for (let i in arr) {
+//	console.log(i);
+//}
+
+// forEach
+
+//const arr = ['ручка', 'карандаш', 'ластик'];
+//arr.forEach((elem, index) => {
+//	console.log(elem);
+//	console.log(index);
+//});
