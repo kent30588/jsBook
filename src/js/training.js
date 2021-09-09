@@ -344,4 +344,20 @@
 //arr.forEach((elem, index) => {
 //	console.log(elem);
 //	console.log(index);
-//});
+//});} î#/('ï
+
+
+//                                                        Работа с Dom	
+let text = document.getElementById('text');
+let btnRed = document.getElementById('btnRed');
+let btnGreen = document.getElementById('btnGreen');
+
+btnRed.addEventListener('click', () => {
+	text.style.color = 'red';
+	alert('Цвет текста изменен на красный');
+});
+
+btnGreen.addEventListener('click', () => {
+	text.style.color = 'green';
+	alert('Цвет текста изменен на зеленый');
+});
