@@ -138,8 +138,6 @@
 //let e = !8;
 //console.log(e);// вернет false
 
-// !!
-
 //let str = 5;
 //let a = !!str;
 //console.log(a); // перевели переменную str в boolean / true
@@ -218,58 +216,85 @@
 //alert(result);// выведет 4
 
 
+//                                                        Работа с Dom	
+//const TEXT_ID = 'text',
+//    BTN_RED = 'btnRed',
+//    BTN_GREEN = 'btnGreen',
+//    BTN_YELLOW = 'btnYellow',
+//    RED_COLOR = 'red',
+//    GREEN_COLOR = 'green',
+//    YELLOW_COLOR = 'yellow',
+//    TEXT_CHANGE_TO_GREEN = 'Цвет текста изменен на зеленый',
+//    TEXT_CHANGE_TO_YELLOW = 'Цвет текста изменен на желтый',
+//    TEXT_CHANGE_TO_RED = 'Цвет текста изменен на красный';
+
+//function getElement(idElement) {
+//    return document.getElementById(idElement);
+//}
+
+//function setTextColor(color) {
+//    text.style.color = color;
+//}
+
+//let text = getElement(TEXT_ID);
+//let btnRed = getElement(BTN_RED);
+//let btnGreen = getElement(BTN_GREEN);
+//let btnYellow = getElement(BTN_YELLOW);
+
+//btnRed.addEventListener('click', () => {
+//    setTextColor(RED_COLOR);
+//    alert(TEXT_CHANGE_TO_RED);
+//});
+
+//btnGreen.onclick = () => {
+//    setTextColor(GREEN_COLOR);
+//    alert(TEXT_CHANGE_TO_GREEN);
+//};
+
+//btnYellow.addEventListener('click', () => {
+//    setTextColor(YELLOW_COLOR);
+//    alert(TEXT_CHANGE_TO_YELLOW);
+//});
+
 //                                                                    Объекты
 
-//const boy = { 
-//	name: 'Александр',// свойства объекта (ключ : значение)
-//	age: 33,
-//	sayHello: function(){// создали метод объекта
-//		console.log('Привет, меня зовут', this.name);
-//	}
-//};// Создали объект
+//const boy = {
+//    name: 'Александр', // свойства объекта (ключ : значение)
+//    age: 33,
+//    sayHello: function() { // создали метод объекта
+//        alert(`Привет, меня зовут, ${this.name}`);
+//    }
+//}; // Создали объект
 
-//console.log('Мое имя', boy.name);//выведет Мое имя Александр
-//console.log('Мой возраст', boy.age);// 33
-//boy.sayHello();// выведет метод
+//console.log('Мое имя', boy.name); //выведет Мое имя Александр
+//console.log('Мой возраст', boy.age); // 33
+//boy.sayHello();
 
 //const hero = {
-//	name: 'Mario',
-//	attack: 15,
-//	defence: 5,
-//	level: 1,
-//	experiance: 0,
-//	coordinate: 0,
-//	goRight: function () {
-//		this.coordinate++;// с помощью this мы можем обращаться свойствам и методам объекта
-//		alert('Иду направо');
-//	},
-//	goLeft: function () {
-//		this.coordinate--;
-//		alert('Иду налево');
-//	},
-//	hit: function () {
-//		this.experiance += 10;
-//		alert('Ударил врага');
-//	},
-//	blockkick: function () {
-//		alert('Заблокировал удар');
-//	}
+//    name: 'Mario',
+//    attack: 15,
+//    defence: 5,
+//    level: 1,
+//    experience: 0,
+//    coordinate: 0,
+//    goRight: function() {
+//        this.coordinate++;
+//        alert('Иду направо');
+//    },
+//    goLeft: function() {
+//        this.coordinate--;
+//        alert('Иду налево');
+//    },
+//    hit: function() {
+//        this.experience += 10;
+//        alert('Ударил врага');
+//    },
+//    blockKick: function() {
+//        alert('Заблокировал удар');
+//    }
 //};
-//hero.goLeft();
-//hero.hit();
 
-//let text = document.getElementById('text');
-//let btnRed = document.getElementById('btnRed');
-//let btnGreen = document.getElementById('btnGreen');
 
-//btnRed.onclick = function () {
-//	text.style.color = 'red';
-//	alert('Цвет текста изменени на красный');
-//};
-//btnGreen.addEventListener('click', () => {
-//	text.style.color = 'green';
-//	alert('Цвет текста изменени на зеленый');
-//});
 
 //                                                                  массивы
 
@@ -280,10 +305,10 @@
 //];
 
 //const arr = ['ручка', 'карандаш', 'ластик'];
-//arr[0];// ручка
-//arr[1];//карандаш
-//arr[2];//ластик
-//arr[4]//undefined
+//arr[0]; // ручка
+//arr[1]; //карандаш
+//arr[2]; //ластик
+//arr[4]; //undefined
 
 //изменение элемента в массиве
 
@@ -315,10 +340,10 @@
 // Удаление элемента в массиве
 
 //const arr = ['ручка', 'карандаш', 'ластик'];
-////arr.pop();
+//arr.pop();
 //const dellElement = arr.pop();
 //console.log(arr);
-//console.log(dellElement );
+//console.log(dellElement);
 
 //const arr = ['ручка', 'карандаш', 'ластик'];
 ////arr.shift();
@@ -346,43 +371,34 @@
 //	console.log(index);
 //});} î#/('ï
 
+//                          Методы массивов splice, slice,concat
+//Splice
 
-//                                                        Работа с Dom	
-const TEXT_ID = 'text',
-    BTN_RED = 'btnRed',
-    BTN_GREEN = 'btnGreen',
-    BTN_YELLOW = 'btnYellow',
-    RED_COLOR = 'red',
-    GREEN_COLOR = 'green',
-    YELLOW_COLOR = 'yellow',
-    TEXT_CHANGE_TO_GREEN = 'Цвет текста изменен на зеленый',
-    TEXT_CHANGE_TO_YELLOW = 'Цвет текста изменен на желтый',
-    TEXT_CHANGE_TO_RED = 'Цвет текста изменен на красный';
+//const languages = ['python', 'java', 'js'];
+//// нам надо удалить 1 и 2
+//languages.splice(0, 2);
+//console.log(languages);// js
 
-function getElement(idElement) {
-    return document.getElementById(idElement);
-}
+//const arr = ['python', 'java', 'js'];
+////мне нужно удалить последний и вставить 3 других
+//const arr2 = arr.splice(2, 1, 'php', 'c++', 'c#');
+//console.log(arr); //'python', 'java', 'php', 'c++', 'c#'
+//console.log(arr2);
 
-function setTextColor(color) {
-    text.style.color = color;
-}
+//slice
 
-let text = getElement(TEXT_ID);
-let btnRed = getElement(BTN_RED);
-let btnGreen = getElement(BTN_GREEN);
-let btnYellow = getElement(BTN_YELLOW);
+//const arr = ['python', 'java', 'js', 'c++'];
+//// нужно скопировать java  js
+//const arr2 = arr.slice(1, 3);
+//console.log(arr); //'python', 'java', 'js', 'c++'
+//console.log(arr2); //'java', 'js',
 
-btnRed.addEventListener('click', () => {
-    setTextColor(RED_COLOR);
-    alert(TEXT_CHANGE_TO_RED);
-});
+//concat
 
-btnGreen.onclick = () => {
-    setTextColor(GREEN_COLOR);
-    alert(TEXT_CHANGE_TO_GREEN);
-};
-
-btnYellow.addEventListener('click', () => {
-    setTextColor(YELLOW_COLOR);
-    alert(TEXT_CHANGE_TO_YELLOW);
-});
+//const arr = ['python', 'java'];
+//const arr2 = ['js', 'c++'];
+////нужно объядинить их
+//const newArr = arr.concat(arr2);
+//console.log(arr);
+//console.log(arr2);
+//console.log(newArr); //'python', 'java', 'js', 'c++'
