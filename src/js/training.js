@@ -348,16 +348,41 @@
 
 
 //                                                        Работа с Dom	
-let text = document.getElementById('text');
-let btnRed = document.getElementById('btnRed');
-let btnGreen = document.getElementById('btnGreen');
+const TEXT_ID = 'text',
+    BTN_RED = 'btnRed',
+    BTN_GREEN = 'btnGreen',
+    BTN_YELLOW = 'btnYellow',
+    RED_COLOR = 'red',
+    GREEN_COLOR = 'green',
+    YELLOW_COLOR = 'yellow',
+    TEXT_CHANGE_TO_GREEN = 'Цвет текста изменен на зеленый',
+    TEXT_CHANGE_TO_YELLOW = 'Цвет текста изменен на желтый',
+    TEXT_CHANGE_TO_RED = 'Цвет текста изменен на красный';
+
+function getElement(idElement) {
+    return document.getElementById(idElement);
+}
+
+function setTextColor(color) {
+    text.style.color = color;
+}
+
+let text = getElement(TEXT_ID);
+let btnRed = getElement(BTN_RED);
+let btnGreen = getElement(BTN_GREEN);
+let btnYellow = getElement(BTN_YELLOW);
 
 btnRed.addEventListener('click', () => {
-	text.style.color = 'red';
-	alert('Цвет текста изменен на красный');
+    setTextColor(RED_COLOR);
+    alert(TEXT_CHANGE_TO_RED);
 });
 
-btnGreen.addEventListener('click', () => {
-	text.style.color = 'green';
-	alert('Цвет текста изменен на зеленый');
+btnGreen.onclick = () => {
+    setTextColor(GREEN_COLOR);
+    alert(TEXT_CHANGE_TO_GREEN);
+};
+
+btnYellow.addEventListener('click', () => {
+    setTextColor(YELLOW_COLOR);
+    alert(TEXT_CHANGE_TO_YELLOW);
 });
