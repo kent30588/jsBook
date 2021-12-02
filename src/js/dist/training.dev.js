@@ -1,11 +1,7 @@
 //let a = 4;
 //let b = 2;
-
 //console.log(a > b);
-"use strict";
-
-//const question = prompt('Вам нравится наш сайт?', '');
-
+"use strict"; //const question = prompt('Вам нравится наш сайт?', '');
 //if (question < 18) {
 //	alert('Вам рано посещать наш сайт')
 //} else if (question >= 18) {
@@ -13,13 +9,11 @@
 //} else {
 //	alert('Вы указали неверный формат возраста');
 //}
-
 //const otvet = (question < 18) ? 'Вам рано посещать наш сайт' :
 //	(question >= 18) ? 'Добро пожаловать' :
 //		'Вы указали неверный формат возраста';
 //alert(otvet);
 //const question = prompt('Вам нравится наш сайт?', '');
-
 //if (question < 18) {
 //	alert('adsads');
 //} else if (question >= 18) {
@@ -27,63 +21,45 @@
 //} else {
 //	alert('asdasd');
 //}
-
 //                                                            Циклы
-
 //let i = 1;
 //while (i <= 3) {
 //	alert(i);
 //	i++;
 //}
-
-
 //let i = 1;
-
 //do {
 //	alert(i);
 //	i++;
 //} while (i < 4);
-
 //for (let i = 1; i <= 3; i++){
 //	alert(i);
 //}
-
 //                                                           Операторы
-
 //console.log(typeof(+'1' + +'3')); // получим  4
-
 //инкрименты
 //let i = 3;
 //i++;
 //console.log(i); // получим значение 4
-
 //let i = 3;
 //console.log(++i); // получим значение 4
-
 //декремент
-
 //let i = 3;
 //i--;
 //console.log(i); // получим значение 2
-
 //let i = 3;
 //console.log(--i); // получим значение 2
-
 //Возведение в степень
 //let a = 2;
 //let b = 3;
 //console.log(2 ** 3); // получим значение 8
 //console.log(3 ** 2); // получим значение 9
-
 //Остаток от деления
 //let a = 11;
 //let b = 2;
 //console.log(a % b);// получим 1
-
 //Логические операторы
-
 //  Оператор ||
-
 //let a = true;
 //let b = false;
 //if (a || b) {
@@ -91,7 +67,6 @@
 //} else {
 //	alert('Появлюсь я');
 //}
-
 //let c = false;
 //let d = false;
 //if (c || d) {
@@ -99,34 +74,26 @@
 //} else {
 //		alert('Появлюсь я');
 //}
-
 //let useAge = 17;
 //let counrMsgs = 499;
-
 //if ((useAge >= 18) || (counrMsgs >= 500)) {
 //	alert('Вам разрешено прикреплять фото');// выведет сообщение, если хоть один операнд будет true
 //} else {
 //	alert('Вам запрещено прикреплять фото');// выведет сообщение, если оба false
 //}
-
 // Оператор &&
-
 //console.log(false && false);//false
 //console.log(true && false);//false
 //console.log(false && true);//false
 //console.log(true && true);// true
-
 //let useAge = 21;
 //let counrMsgs = 499;
-
 //if ((useAge >= 18) && (counrMsgs >= 500)) {
 //	alert('Вам разрешено прикреплять фото');// выведет сообщение, если оба операнда true
 //} else {
 //	alert('Вам запрещено прикреплять фото');// выведет сообщение, если оба или один false
 //}
-
 // Оператор ! 
-
 //let a = !true;
 //console.log(a);// вернет false
 //let b = !false;
@@ -137,20 +104,12 @@
 //console.log(d);// вернет true
 //let e = !8;
 //console.log(e);// вернет false
-
 // !!
-
 //let str = 5;
 //let a = !!str;
 //console.log(a); // перевели переменную str в boolean / true
-
-
-
-
 //                                                             конструкция switch
-
 //let arg = +prompt('Сколько?');
-
 //switch (arg) {
 //	case 1:
 //		alert('Значение переменной arg равно 1'); // выведится это сообщение если пользователь укажет 1
@@ -164,62 +123,41 @@
 //	default:
 //		alert('Значение переменной arg равно ' + arg); 
 //}
-
 //                                                                 Функции
-
 //function callPayment() {
 //	let amount = +prompt('На какую сумму Вы хотите пополнить счет?');
 //	alert(`Ваш счет пополнен на ${amount} $`);
 //}
-
 //callPayment();
-
 //function callPayment(currency = '$') {
 //	let amount = +prompt('На какую сумму Вы хоите пополнить счет?');
 //	alert(`Ваш счет пополнен на сумму ${amount} ${currency}`);
 //}
-
 //let userCurrencyRub = 'P';
 //let userCurrencyUSD = '$';
-
 //callPayment();//Выведет $
 //callPayment(userCurrencyRub); //Выведет Р т.к. вызов в таком случае перебьет значение по умолчанию
-
-
 // Возврат значение функций
-
 //function sqr(a) {
 //	let result = a * a;
 //	return result;
 //}
-
 //let d = sqr(10);
 //console.log(d);
-
-
 //Стрелочная функция
-
 //let func = () => alert('Я стрелочная функция!');
-
 //func();
-
 //let func = (a) => {
 //	alert(a);
 //};
-
 //func(3);// Выведет 3
-
 //let func = () => {
 //	let result = 2 + 2;
 //	return result;
 //};
-
 //let result = func();
 //alert(result);// выведет 4
-
-
 //                                                                    Объекты
-
 //const boy = { 
 //	name: 'Александр',// свойства объекта (ключ : значение)
 //	age: 33,
@@ -227,11 +165,9 @@
 //		console.log('Привет, меня зовут', this.name);
 //	}
 //};// Создали объект
-
 //console.log('Мое имя', boy.name);//выведет Мое имя Александр
 //console.log('Мой возраст', boy.age);// 33
 //boy.sayHello();// выведет метод
-
 //const hero = {
 //	name: 'Mario',
 //	attack: 15,
@@ -257,11 +193,9 @@
 //};
 //hero.goLeft();
 //hero.hit();
-
 //let text = document.getElementById('text');
 //let btnRed = document.getElementById('btnRed');
 //let btnGreen = document.getElementById('btnGreen');
-
 //btnRed.onclick = function () {
 //	text.style.color = 'red';
 //	alert('Цвет текста изменени на красный');
@@ -270,121 +204,90 @@
 //	text.style.color = 'green';
 //	alert('Цвет текста изменени на зеленый');
 //});
-
 //                                                                  массивы
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 //const users = [
 //	{ name: 'Вася', age: 15 },
 //	{ name: 'Игорь', age: 35}
 //];
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 //arr[0];// ручка
 //arr[1];//карандаш
 //arr[2];//ластик
 //arr[4]//undefined
-
 //изменение элемента в массиве
-
 //let arr = ['ручка', 'карандаш', 'ластик'];
 //arr[1] = 'пластелин';
 //console.log(arr);
-
 //Добавление элемента в массив
-
 //const arr = ['ручка'];
 //arr[1] = 'карандаш';
-
 //arr[10] = 'пластелин';// Так добавлять не рекомендуется
 //console.log(arr.length);
-
 //const arr = [];
 //arr.push('ручка');
 //arr.push('карандаш');
 //console.log(arr);
 //console.log(arr.length);
-
 //const arr = ['ручка', 'карандаш'];
 //arr.unshift('ластик');
 //arr.unshift('точилка');
 //console.log(arr);
 //console.log(arr[1]);
 //console.log(arr.length);
-
 // Удаление элемента в массиве
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 ////arr.pop();
 //const dellElement = arr.pop();
 //console.log(arr);
 //console.log(dellElement );
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 ////arr.shift();
 //const dellElement = arr.shift();
 //console.log(arr);
 //console.log(dellElement );
-
 // Перебор элеметов в массиве for forEach
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 //for (let i = 0; i < arr.length; i++){
 //	console.log(arr[i]);
 //}
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 //for (let i in arr) {
 //	console.log(i);
 //}
-
 // forEach
-
 //const arr = ['ручка', 'карандаш', 'ластик'];
 //arr.forEach((elem, index) => {
 //	console.log(elem);
 //	console.log(index);
 //});} î#/('ï
-
-
 //                                                        Работа с Dom	
 //let text = document.getElementById('text');
 //let btnRed = document.getElementById('btnRed');
 //let btnGreen = document.getElementById('btnGreen');
-
 //btnRed.addEventListener('click', () => {
 //	text.style.color = 'red';
 //	alert('Цвет текста изменен на красный');
 //});
-
 //btnGreen.addEventListener('click', () => {
 //	text.style.color = 'green';
 //	alert('Цвет текста изменен на зеленый');
 //});
-
-
 //                                Методы массивов 
 //splice slice concat
-
 //const languages = ['pyton', 'java', 'js'];
 //languages.splice(0, 2);
 //console.log(languages);
-
 //const languages = [1, 2, 3];
 //languages.splice(0, 2, 4, 5, 6);
 //console.log(languages);
-
 //const num = [1, 2, 3, 4, 5];
 //const newNum = num.slice(1, 2);
 //console.log(newNum);
-
-
 //const num = [1, 2, 3];
 //const newNum = [4, 5, 6];
 //const summary = num.concat(newNum);
-
 //console.log(summary);
-
 //                                Методы массивов 
 //find findIndex filter
 //const cars = [
@@ -393,32 +296,23 @@
 //	{ id: 3, model: 'BMW' },
 //	{ id: 4, model: 'Toyota'}
 //];
-
 ////const audi = cars.find(item => item.model === 'Audi');
 ////console.log(audi);
-
 ////const audi = cars.findIndex(item => item.model === 'Audi');
 ////console.log(audi);//1 возвращает индекс элемента
-
 //const filterCars = cars.filter(item => item.id % 2 === 0);
 //console.log(filterCars);
-
 //map sort
-
 //const numbers = [2, 3, 4, 5];
 //const result = numbers.map(n => n * 3);
 //console.log(result);
-
 //const arr = ['d', 'z', 'a', 'c', 'y'];
 //arr.sort();
 //console.log(arr);
-
 //const arr = [30, -1, 2, 67, 0, 1, 500];
 //arr.sort();
 //console.log(arr);
-
 //const arr = [45,-150, 4, 2, 1, -50, 300, 4,0];
-
 ////function compare(a, b) {
 ////	if (a > b) return 1;
 ////	if (a === b) return 0;
@@ -427,150 +321,37 @@
 ////arr.sort(compare);
 //arr.sort((a, b) => a - b);
 //console.log(arr);
-
 //const arr = [3, 1, 4, 2];
-
 //const ascending = [...arr].sort((a, b) => a - b).map(d => d * 10);
 //console.log(arr);
 //console.log(ascending);
-
 //reverse split join
-
 //const arr = [1, 2, 3, 4, 5];
 //arr.reverse();
 //console.log(arr);
-
-
 //const str = 'cat, dog, snake';
 //const arr = str.split(',');
 //console.log(arr);
-
 //const str = 'JavaScript';
 ////const arr = str.split('');
 //const arr = str.split();
 //console.log(arr);
-
 //const str = '12345';
 //const arr = str.split('');
 //console.log(arr);
-
-
 //const arr = [1, 2, 3, 4, 5];
 //const str = arr.join('');
 //console.log(arr);
-
-
 //const arr = [1, 2, 3, 4, 5];
 //const str = arr.join(' ');
 //console.log(str);
-
 // indexOf lastindexOf includes
-
 //const arr = [1, 2, 3, 4, 10];
 //const index = arr.indexOf(10);
 //console.log(index);
-
 //const arr = [1, 2, 3, 2, 10, 5];
 //const index = arr.lastIndexOf(10);
 //console.log(index);
 
-//const arr = [1, 2, 3, 55, 2, 1];
-//console.log(arr.includes(55));
-
-//reduce spread
-//let arr = [2, 3, 4, 5,6];
-//let result = arr.reduce((value, elem) => {
-//	return value * elem;
-//},1);
-
-//console.log(result);
-
-//let arr = ['J', 'a', 'v', 'a'];
-//let result = arr.reduce((value, elem) => {
-//	return value + elem;
-//},'');
-
-//console.log(arr);
-
-//const arr = [3, 4, 5];
-//const newArr = [1, 2, ...arr];
-//console.log(newArr);
-
-//const arr = ['I', 'love'];
-//const languages = ['JavaScript'];
-//const result = [...arr, ...languages, '!'];
-//console.log(result);
-
-// Arrau.isArray some every
-
-//const obj = { name: 'Alex' };
-//const arr = [1, 2, 3];
-//console.log(Array.isArray(obj));
-//console.log(Array.isArray(arr));
-
-//const arr = [10, 20, 5, 1, 2, 100];
-//const result = arr.some(n => (n / 2) >= 10);
-//console.log(result);
-
-//const arr = ['a', 'c', 'c', 'b', 100, 'm'];
-//const result = arr.some(n => n === 'q');
-//console.log(result);
-
-//const arr = [20, 30, 50];
-//const arr2 = [1, 9, 14, 25];
-//const result1 = arr.every(n => (n / 2) >= 10);
-//const result2 = arr2.every(n => (n / 2) >= 10);
-//console.log(result1);
-//console.log(result2);
-
-
-// flat fill
-
-//const arr = [1, 2, 3, 4, [5, 6], [[7, 8]]];
-//const result = arr.flat(1);
-//console.log(result);
-
-//Задача посчитать среднее значения массива
-
-//const arr = [10, 54, 2, 3, 19, 20, 34, 23, 76];//26.77777
-//const getAverage = (numbers) => {
-//	const a = numbers.reduce((value, elem) => {
-//		return value + elem;
-//	}, 0);
-//	return a / numbers.length;
-//};
-
-//console.log(getAverage(arr));
-
-//                Планирование вызова функции setTimeout
-
-//function hello() {
-//	console.log('Hello');
-//}
-
-//setTimeout(hello, 5000);
-//function hello() {
-//	console.log('Привет');
-//	clearInterval(timerId);
-//}
-//const timerId = setTimeout(hello, 5000);
-
-//                          setInterval
-
-//function hello() {
-//	console.log('Hello');
-//}
-//const intervsl = setInterval(hello, 2000);
-//clearInterval(intervsl, 10000);
-
-//let counter = 0;
-
-//function hello() {
-//	console.log('Привет');
-//	counter += 1;
-//	if (counter === 3) {
-//		clearInterval(intervalId);
-//	}
-//}
-
-//const intervalId = setInterval(hello, 1000);
+var arr = [1, 2, 3, 55, 2, 1];
+console.log(arr.includes(55));
