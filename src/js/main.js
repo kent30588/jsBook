@@ -1,4 +1,3 @@
-
 "use strict";
 
 //Домашнее задание 
@@ -100,7 +99,7 @@ if ((age === 25) && (userName === 'John')) {
 //		break;
 //	default:
 //		alert('Вам начислено ' + killEnemy * 100 + ' очков');
-	
+
 //}
 
 //let killEnemy = +prompt('Сколько Вы убили врагов?');
@@ -182,5 +181,3 @@ if ((age === 25) && (userName === 'John')) {
 //	//let result = questionFirst * questionTwo;
 //	return questionFirst * questionTwo;
 //};
-
-
